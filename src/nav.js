@@ -2,10 +2,10 @@ import React from 'react'
 import styles from './nav-styles'
 const { func, bool } = React.PropTypes
 
-getPrevStyles = (props)=>{
+function getPrevStyles(props){
     return props.hasPrevious? styles.prev : styles.prevHidden
 }
-getNextStyles = (props)=>{
+function getNextStyles(props){
     return props.hasNext ? styles.next : styles.nextHidden
 }
 function Nav(props) {
