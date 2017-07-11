@@ -12,7 +12,11 @@ const btn ={
     border:'none',
     outline:0,
     cursor: 'pointer',
-    useSelect:'none'
+    useSelect:'none',
+    ':hover':{
+        transition:'all 1s',
+        color:'#8c9ea3'
+    }
 
 }
 const hidden = {
