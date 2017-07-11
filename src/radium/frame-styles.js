@@ -4,7 +4,7 @@ export default {
     root:{
         position:'relative',
         maxWidth:'100%',
-        width: config.ImageWidth,
+        width: config.imageWidth,
         margin:'50px auto'
     }
 }
