@@ -6,7 +6,7 @@ import Frame from './frame'
 import Nav from './nav'
 import Slide from './slide'
 import styles from './app-styles'
-import {Style} from 'radium'
+import {Style, StyleRoot} from 'radium'
 @autobind
 export default class DriftApp extends React.Component {
   state = {
@@ -29,6 +29,10 @@ export default class DriftApp extends React.Component {
   }
   render() {
     return (
+        //  In order to use keyframes, you must wrap your application in the StyleRoot component
+        //http://formidable.com/open-source/radium/docs/api
+        //http://formidable.com/open-source/radium/docs/api#styleroot-component
+        <StyleRoot>
       <Frame>
           <Style rules={styles}/>
         <Carousel showIndex={this.state.showIndex} nav={this.renderNav()} width={configStyles.imageWidth}>
@@ -55,6 +59,7 @@ export default class DriftApp extends React.Component {
           </Slide>
         </Carousel>
       </Frame>
+      </StyleRoot>
     )
   }
 }

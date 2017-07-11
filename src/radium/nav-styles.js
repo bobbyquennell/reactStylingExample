@@ -26,7 +26,8 @@ const btn ={
     outline:0,
     cursor: 'pointer',
     userSelect:'none',
-    animation:`${pulse} 4s 4s infinite`,
+    animation:`x 4s 1s infinite`,
+    animationName: pulse,
     ':hover':{
         transition:'all 1s',
         color:'#8c9ea3'
