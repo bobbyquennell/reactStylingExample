@@ -1,5 +1,18 @@
 import config from './config-styles'
+import Radium from 'radium'
 
+//using Radium's javascript based api to define keyframes
+const pulse = Radium.keyframes({
+    '0%':{
+        transform:'scale3d(1, 1, 1)'
+    },
+    '15%':{
+        transform:'scale3d(1.05, 1.05, 1.05)'
+    },
+    '100%':{
+        transform:'scale3d(1, 1, 1)'
+    }
+}, 'Nav')
 const btn ={
     flex:1,
     height:config.imageHeight,
@@ -12,7 +25,8 @@ const btn ={
     border:'none',
     outline:0,
     cursor: 'pointer',
-    useSelect:'none',
+    userSelect:'none',
+    animation:`${pulse} 4s 4s infinite`,
     ':hover':{
         transition:'all 1s',
         color:'#8c9ea3'
