@@ -1,0 +1,16 @@
+/*this is a file for the global styles. the naming: base.css is just part of
+a convention drawn from Harry Roberts' concept of the inverted triangles CSS*/
+* {
+    box-sizing: border-box;
+}
+/*note: it's worth noting that these kind of selectors should only be
+included if you are the application author. if you are just the author of a single React component,
+especially the one that might not be reused in other projects, it would be irresponsible to style
+"html" or "*" in your component styles.
+*/
+html{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    background-color: #
+}

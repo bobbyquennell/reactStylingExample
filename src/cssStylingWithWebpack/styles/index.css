@@ -1,0 +1,8 @@
+/*these aren't actuall modules,
+we are essentially concatenating files when we use this CSS feature */
+/*the other point is that the "import" still needs to be followable by webpack, thus we use
+an "./" to prefix the import path. because it's a relative file path that webpack needs to follow.
+for the same reason, we're always going to include the .css file extension*/
+@import "./config.css";
+@import "./base.css";
+@import "./frame.css";
