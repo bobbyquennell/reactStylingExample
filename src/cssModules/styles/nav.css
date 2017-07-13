@@ -1,5 +1,17 @@
 @import "./config.css";
 
+@keyframes pulse {
+    0%{
+        transform:scale3d(1, 1, 1);
+    }
+    15%{
+        transform:scale3d(1.05, 1.05, 1.05);
+    }
+    100%{
+        transform:scale3d(1, 1, 1);
+    }
+}
+
 .root{
     position: absolute;
     top:0;
@@ -20,6 +32,7 @@
     cursor: pointer;
     user-select: none;
     outline: 0;
+    animation:pulse 4s 2s infinite;
 }
 .btn:hover{
     transition: all 1s;
