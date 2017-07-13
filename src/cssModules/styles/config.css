@@ -1,0 +1,7 @@
+:root{
+    --imageWidth:640px;
+    --imageHeight:420px;
+}
+/*this stylessheet is used to hold the image dimension variables for the slider.*/
+/*css-next puts our variable declarations in :root, and variable names are prefixed with "--"
+*/
