@@ -30,9 +30,13 @@
     composes:btn;
     text-align: right;
 }
-.nextHidden{
+.hidden{
     visibility: hidden;
 }
+
+.nextHidden{
+    composes:next hidden;
+}
 .prevHidden{
-    visibility: hidden;
+    composes:prev hidden;
 }
