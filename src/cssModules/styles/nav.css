@@ -1,0 +1,32 @@
+@import "./config.css";
+
+.root{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+}
+.btn{
+    flex:1;
+    height: var(--imageHeight);
+    font-size: 50px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-shadow: 3px 8px 3px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    vertical-align: top;
+    cursor: pointer;
+    user-select: none;
+    outline: 0;
+}
+
+.prev{
+    composes:btn;
+    text-align: left;
+}
+.next{
+    composes:btn;
+    text-align: right;
+}
