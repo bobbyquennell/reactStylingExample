@@ -1,5 +1,6 @@
 import React from 'react'
-
+import css from './styles/carousel.css'
+import styleable from 'react-styleable'
 const { node, number } = React.PropTypes
 
 function renderSlides(props) {
@@ -16,7 +17,7 @@ function renderSlides(props) {
 
 function Carousel(props) {
   return (
-    <div>
+    <div className={props.css.root}>
       {renderSlides(props)}
       {props.nav}
     </div>
@@ -29,4 +30,4 @@ Carousel.propTypes = {
   width: number
 }
 
-export default Carousel
+export default styleable(css)(Carousel)
