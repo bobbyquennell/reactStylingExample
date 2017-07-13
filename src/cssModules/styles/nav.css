@@ -21,7 +21,10 @@
     user-select: none;
     outline: 0;
 }
-
+.btn:hover{
+    transition: all 1s;
+    color: #8c9ea3;
+}
 .prev{
     composes:btn;
     text-align: left;
