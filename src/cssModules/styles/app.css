@@ -1,11 +1,12 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.4em;
-    background-color: #1D272F;
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4em;
+  background-color: #1d272f;
 }
-/*native tags like html or a selector like "*", they are global by default */
+
+/* native tags like html or a selector like "*", they are global by default */
