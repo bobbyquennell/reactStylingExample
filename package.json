@@ -55,6 +55,7 @@
     "radium": "^0.19.1"
   },
   "stylelint": {
-    "extends": "C:/Users/bobby/.atom/packages/linter-stylelint/node_modules/stylelint-config-standard"
+    "extends": ["C:/Users/bobby/.atom/packages/linter-stylelint/node_modules/stylelint-config-standard",
+    "C:/Users/bobby/.atom/packages/linter-stylelint/node_modules/stylelint-config-css-modules"]
   }
 }
