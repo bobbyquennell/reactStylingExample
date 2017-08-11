@@ -56,6 +56,6 @@
   },
   "stylelint": {
     "extends": ["C:/Users/bobby/.atom/packages/linter-stylelint/node_modules/stylelint-config-standard",
-    "C:/Users/bobby/.atom/packages/linter-stylelint/node_modules/stylelint-config-css-modules"]
+    "C:/Users/bobby/AppData/Roaming/npm/node_modules/stylelint-config-css-modules"]
   }
 }
